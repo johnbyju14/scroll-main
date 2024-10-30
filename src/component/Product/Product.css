@@ -1,0 +1,103 @@
+
+
+.container {
+    position: relative;
+    /* width: 100vw; */
+    height: 100%;
+    
+    display: flex;
+ 
+    align-items: center;
+  
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 900px;
+    align-items: center;
+    position: relative;
+    transition: transform 0.5s ease-out;
+}
+
+
+
+.beforecards {
+    font-size: 2rem;
+    color: white;
+    margin-right: 20px;
+    /* Add some space between heading and cards */
+    white-space: nowrap;
+    /* Prevent the heading from wrapping to the next line */
+}
+
+.card {
+    min-height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.5s ease-out;
+    
+}
+
+/* Text alignment and style for card content */
+.card h1 {
+    font-size: 3rem;
+    
+    font-weight: bold;
+    
+    text-align: left;
+   
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 2rem;
+    /* Font size for the main heading */
+    font-weight: 600;
+    /* Semi-bold for the title */
+    text-align: left;
+    /* Align text to the left */
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1.2rem;
+    /* Description text size */
+    font-weight: normal;
+    /* Normal font weight for readability */
+    text-align: justify;
+    /* Justify text to align evenly on both sides */
+    line-height: 1.6;
+    /* Spacing between lines for better readability */
+    margin-top: 10px;
+}
+
+
+/* Wavy motion for cards */
+@keyframes wavy {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Hide scrollbar */
+.container::-webkit-scrollbar {
+    display: none;
+}

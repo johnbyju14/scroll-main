@@ -1,0 +1,96 @@
+
+  .hamburger-button {
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    z-index: 999;
+    background: #1a1a1a;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .hamburger-button span {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background-color: white;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger-button.open span:first-child {
+    transform: translateY(3px) rotate(45deg);
+  }
+  
+  .hamburger-button.open span:last-child {
+    transform: translateY(-5px) rotate(-45deg);
+  }
+  
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+  }
+  
+  .menu-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 16rem;
+    background-color: #333;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .menu-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-content ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .menu-content ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-content ul li a:hover {
+    color: #ccc;
+  }
+  
+  .menu-content .contact-us {
+    font-weight: 600;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ccc;
+  }

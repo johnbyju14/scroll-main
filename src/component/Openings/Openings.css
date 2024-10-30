@@ -1,0 +1,20 @@
+
+
+/* Media Query for screens less than 550px */
+@media (max-width: 550px) {
+  .job-listings {
+      padding: 0.5rem; /* Smaller padding for < 550px */
+  }
+  .job-listings h1 {
+      font-size: 1.25rem; /* Smaller size for < 550px */
+  }
+  .job-listings p {
+      font-size: 0.75rem; /* Smaller paragraph size for < 550px */
+  }
+  .job-title {
+      font-size: 0.875rem; /* Smaller job title size for < 550px */
+  }
+  .job-location {
+      font-size: 0.625rem; /* Smaller job location size for < 550px */
+  }
+}
